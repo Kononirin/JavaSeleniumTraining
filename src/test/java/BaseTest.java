@@ -16,5 +16,4 @@ public class BaseTest {
     protected void afterMethod() {
         driver.quit();
     }
-
 }

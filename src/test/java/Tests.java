@@ -1,7 +1,10 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 
 public class Tests extends BaseTest{
 
@@ -35,5 +38,31 @@ public class Tests extends BaseTest{
         Assert.assertEquals(email.getText(), "Email:kononirin@yandex.ru");
         Assert.assertEquals(currentAddress.getText(), "Current Address :Perm, Turchevicha 6-320");
         Assert.assertEquals(permanentAddress.getText(), "Permananet Address :Perm, Turchevicha 6-320");
+    }
+
+    @Test
+    public void testRadioButtonYes() {
+        driver.findElement(ELEMENTS).click();
+        driver.findElement(By.id("item-2")).click();
+
+        WebElement radioButtonYes = driver.findElement(By.xpath("//input[@id='yesRadio']"));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].click();", radioButtonYes);
+
+        WebElement yourSelect = driver.findElement(By.xpath("//span[@class='text-success']"));
+
+        Assert.assertEquals(yourSelect.getText(), "Yes");
+    }
+
+    @Test
+    public void testRadioButtonImpressive() {
+        driver.findElement(ELEMENTS).click();
+        driver.findElement(By.id("item-2")).click();
+
+        WebElement radioButtonImpressive = driver.findElement(By.id("impressiveRadio"));
+        new Actions(driver).moveToElement(radioButtonImpressive).click().build().perform();
+
+        WebElement yourSelect = driver.findElement(By.xpath("//span[@class='text-success']"));
+
+        Assert.assertEquals(yourSelect.getText(), "Impressive");
     }
 }
