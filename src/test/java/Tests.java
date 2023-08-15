@@ -5,6 +5,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Tests extends BaseTest{
 
@@ -76,10 +79,29 @@ public class Tests extends BaseTest{
 
 
         WebElement checkBoxCommands = driver.findElement(By.xpath("//input[@id='tree-node-commands']/following-sibling::span[@class='rct-checkbox']"));
-        new Actions(driver).moveToElement(checkBoxCommands).click().build().perform();
+        checkBoxCommands.click();
 
         WebElement yourSelect = driver.findElement(By.xpath("//span[@class='text-success']"));
 
         Assert.assertEquals(yourSelect.getText(), "commands");
+    }
+
+    //этот тест пока не работает
+    @Test
+    public void testCheckBoxHome() {
+        driver.findElement(ELEMENTS).click();
+        driver.findElement(By.id("item-1")).click();
+
+        WebElement checkBoxHome = driver.findElement(By.xpath("//span[@class='rct-checkbox']"));
+        checkBoxHome.click();
+
+        List<String> checkBoxesList = new ArrayList<>();
+        List<WebElement> yourSelects = driver.findElements(By.xpath("//span[@class='text-success']"));
+        for (WebElement yourSelect : yourSelects) {
+            checkBoxesList.add(yourSelect.getText());
+        }
+
+        String[] checkBoxes = {"home", "desktop", "notes", "commands", "documents", "workspace", "react", "angular", "veu", "office", "public", "private", "classified", "general", "downloads", "wordFile", "excelFile"};
+        Assert.assertEquals(checkBoxesList, checkBoxes);
     }
 }
