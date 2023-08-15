@@ -65,4 +65,21 @@ public class Tests extends BaseTest{
 
         Assert.assertEquals(yourSelect.getText(), "Impressive");
     }
+
+    @Test
+    public void testCheckBoxCommands() {
+        driver.findElement(ELEMENTS).click();
+        driver.findElement(By.id("item-1")).click();
+
+        driver.findElement(By.xpath("//button[@aria-label='Toggle']")).click();
+        driver.findElement(By.xpath("//label[@for='tree-node-desktop']/preceding-sibling::button[@aria-label]")).click();
+
+
+        WebElement checkBoxCommands = driver.findElement(By.xpath("//input[@id='tree-node-commands']/following-sibling::span[@class='rct-checkbox']"));
+        new Actions(driver).moveToElement(checkBoxCommands).click().build().perform();
+
+        WebElement yourSelect = driver.findElement(By.xpath("//span[@class='text-success']"));
+
+        Assert.assertEquals(yourSelect.getText(), "commands");
+    }
 }
