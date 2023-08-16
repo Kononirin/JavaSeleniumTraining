@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -86,7 +87,6 @@ public class Tests extends BaseTest{
         Assert.assertEquals(yourSelect.getText(), "commands");
     }
 
-    //этот тест пока не работает
     @Test
     public void testCheckBoxHome() {
         driver.findElement(ELEMENTS).click();
@@ -95,13 +95,17 @@ public class Tests extends BaseTest{
         WebElement checkBoxHome = driver.findElement(By.xpath("//span[@class='rct-checkbox']"));
         checkBoxHome.click();
 
-        List<String> checkBoxesList = new ArrayList<>();
+        List<String> checkBoxesList = Arrays.asList("home", "desktop", "notes", "commands", "documents", "workspace", "react", "angular", "veu",
+                "office", "public", "private", "classified", "general", "downloads", "wordFile", "excelFile");
+
         List<WebElement> yourSelects = driver.findElements(By.xpath("//span[@class='text-success']"));
+
+        List<String> actualStrings = new ArrayList<>();
+
         for (WebElement yourSelect : yourSelects) {
-            checkBoxesList.add(yourSelect.getText());
+            actualStrings.add(yourSelect.getText());
         }
 
-        String[] checkBoxes = {"home", "desktop", "notes", "commands", "documents", "workspace", "react", "angular", "veu", "office", "public", "private", "classified", "general", "downloads", "wordFile", "excelFile"};
-        Assert.assertEquals(checkBoxesList, checkBoxes);
+        Assert.assertEquals(actualStrings, checkBoxesList);
     }
 }
