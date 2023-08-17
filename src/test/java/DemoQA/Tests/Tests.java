@@ -1,3 +1,5 @@
+package DemoQA.Tests;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -10,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class Tests extends BaseTest{
+public class Tests extends BaseTest {
 
     private static final By ELEMENTS = By.xpath("//div[1][@class='card mt-4 top-card']");
 
@@ -95,17 +97,17 @@ public class Tests extends BaseTest{
         WebElement checkBoxHome = driver.findElement(By.xpath("//span[@class='rct-checkbox']"));
         checkBoxHome.click();
 
-        List<String> checkBoxesList = Arrays.asList("home", "desktop", "notes", "commands", "documents", "workspace", "react", "angular", "veu",
+        List<String> allCheckBoxes = Arrays.asList("home", "desktop", "notes", "commands", "documents", "workspace", "react", "angular", "veu",
                 "office", "public", "private", "classified", "general", "downloads", "wordFile", "excelFile");
 
-        List<WebElement> yourSelects = driver.findElements(By.xpath("//span[@class='text-success']"));
+        List<WebElement> selectedCheckBoxes = driver.findElements(By.xpath("//span[@class='text-success']"));
 
-        List<String> actualStrings = new ArrayList<>();
+        List<String> selectedCheckBoxesStrings = new ArrayList<>();
 
-        for (WebElement yourSelect : yourSelects) {
-            actualStrings.add(yourSelect.getText());
+        for (WebElement selectedCheckBox : selectedCheckBoxes) {
+            selectedCheckBoxesStrings.add(selectedCheckBox.getText());
         }
 
-        Assert.assertEquals(actualStrings, checkBoxesList);
+        Assert.assertEquals(selectedCheckBoxesStrings, allCheckBoxes);
     }
 }
