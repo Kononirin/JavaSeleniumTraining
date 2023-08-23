@@ -1,5 +1,6 @@
 package DemoQA.Pages;
 
+import DemoQA.Tests.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class MainPage {
+public class MainPage extends BaseTest {
 
     @FindBy(linkText = "https://demoqa.com")
     public WebElement headerLink;
@@ -36,4 +37,12 @@ public class MainPage {
     public MainPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
+
+    public MainPage() {
+    }
+
+    //    public MainPage clickElementsCard() {
+//        elementsCard.click();
+//        return new ElementsPage();
+//    }
 }

@@ -14,5 +14,4 @@ public class MainPageTests extends BaseTest{
 
         Assert.assertEquals(mainPage.categoryCards.size(), 6);
     }
-
 }
