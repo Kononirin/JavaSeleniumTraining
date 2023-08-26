@@ -30,18 +30,6 @@ public class TextBoxTests extends BaseTest{
         mainPage.elementsCard.click();
         elementsPage.textBoxButton.click();
 
-//        WebElement elementsCard1 = new WebDriverWait(driver, Duration.ofSeconds(10)).
-//                until(ExpectedConditions.elementToBeClickable(mainPage.elementsCard));
-////                elementsCard1.click();
-//        new Actions(driver).moveToElement(elementsCard1).click().build().perform();
-//
-//        WebElement textBoxButton1 = new WebDriverWait(driver, Duration.ofSeconds(10)).
-//                until(ExpectedConditions.elementToBeClickable(elementsPage.textBoxButton));
-////                elementsCard1.click();
-//        new Actions(driver).moveToElement(elementsCard1).click().build().perform();
-//
-////        elementsPage.textBoxButton.click();
-
         textBoxPage.fillFields(
                 person.USER_NAME,
                 person.EMAIL,
