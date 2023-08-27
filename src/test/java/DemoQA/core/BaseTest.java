@@ -1,4 +1,4 @@
-package DemoQA.Tests;
+package DemoQA.core;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +25,8 @@ public class BaseTest {
         driver.manage().window().setSize(new Dimension(1440, 900));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://demoqa.com/");
+
+        BasePage.setDriver(driver);
 }
 
     @AfterMethod

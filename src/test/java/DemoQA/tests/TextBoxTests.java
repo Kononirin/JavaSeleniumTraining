@@ -1,20 +1,14 @@
-package DemoQA.Tests;
+package DemoQA.tests;
 
-import DemoQA.Data.Person;
-import DemoQA.Pages.ElementsPage;
-import DemoQA.Pages.MainPage;
-import DemoQA.Pages.TextBoxPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import DemoQA.data.Person;
+import DemoQA.pages.ElementsPage;
+import DemoQA.pages.MainPage;
+import DemoQA.pages.TextBoxPage;
+import DemoQA.core.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
-
-public class TextBoxTests extends BaseTest{
+public class TextBoxTests extends BaseTest {
 
     MainPage mainPage;
     ElementsPage elementsPage;
@@ -23,9 +17,9 @@ public class TextBoxTests extends BaseTest{
 
     @Test
     public void testTextBox() {
+
         mainPage = new MainPage(driver);
         elementsPage = new ElementsPage(driver);
-        textBoxPage = new TextBoxPage(driver);
 
         mainPage.elementsCard.click();
         elementsPage.textBoxButton.click();

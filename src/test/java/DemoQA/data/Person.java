@@ -1,4 +1,4 @@
-package DemoQA.Data;
+package DemoQA.data;
 
 public class Person {
 

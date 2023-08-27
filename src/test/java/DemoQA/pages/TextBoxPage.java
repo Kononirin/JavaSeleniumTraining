@@ -1,12 +1,11 @@
-package DemoQA.Pages;
+package DemoQA.pages;
 
-import DemoQA.Tests.BaseTest;
-import org.openqa.selenium.WebDriver;
+import DemoQA.core.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TextBoxPage extends BaseTest {
+public class TextBoxPage extends BasePage {
 
     @FindBy(id = "userName")
     public WebElement userName;
@@ -38,8 +37,8 @@ public class TextBoxPage extends BaseTest {
     @FindBy(xpath = "//p[@id='permanentAddress']")
     public WebElement permanentAddressResult;
 
-    public TextBoxPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+    public TextBoxPage() {
+        PageFactory.initElements(this.driver, this);
     }
 
     public TextBoxPage fillFields(String name, String email, String curAddress, String permAddress) {

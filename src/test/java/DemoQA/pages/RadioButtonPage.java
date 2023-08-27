@@ -1,13 +1,12 @@
-package DemoQA.Pages;
+package DemoQA.pages;
 
-import DemoQA.Tests.BaseTest;
-import DemoQA.Tests.RadioButtonPageTests;
+import DemoQA.core.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RadioButtonPage extends BaseTest {
+public class RadioButtonPage extends BasePage {
 
     @FindBy(className = "yesRadio")
     public WebElement yesRadioButton;

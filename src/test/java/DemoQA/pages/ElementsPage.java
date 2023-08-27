@@ -1,12 +1,12 @@
-package DemoQA.Pages;
+package DemoQA.pages;
 
-import DemoQA.Tests.BaseTest;
+import DemoQA.core.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ElementsPage extends BaseTest {
+public class ElementsPage extends BasePage {
 
     @FindBy(className = "main-header")
     public WebElement headerElements;
@@ -43,10 +43,11 @@ public class ElementsPage extends BaseTest {
     }
 
     public ElementsPage() {
+
     }
 
-//    public ElementsPage clickTextBoxButton() {
-//        textBoxButton.click();
-//        return new TextBoxPage();
-//    }
+    public TextBoxPage clickTextBoxButton() {
+        textBoxButton.click();
+        return new TextBoxPage();
+    }
 }

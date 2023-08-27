@@ -1,5 +1,6 @@
-package DemoQA.Tests;
+package DemoQA.tests;
 
+import DemoQA.core.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;

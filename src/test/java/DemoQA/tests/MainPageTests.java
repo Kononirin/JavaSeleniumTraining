@@ -1,10 +1,11 @@
-package DemoQA.Tests;
+package DemoQA.tests;
 
-import DemoQA.Pages.MainPage;
+import DemoQA.pages.MainPage;
+import DemoQA.core.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MainPageTests extends BaseTest{
+public class MainPageTests extends BaseTest {
 
     MainPage mainPage;
 

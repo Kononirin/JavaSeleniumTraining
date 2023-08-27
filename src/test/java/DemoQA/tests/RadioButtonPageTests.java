@@ -1,4 +1,6 @@
-package DemoQA.Tests;
+package DemoQA.tests;
 
 public class RadioButtonPageTests {
+
+
 }
