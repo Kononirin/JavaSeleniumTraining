@@ -1,6 +1,7 @@
 package DemoQA.pages;
 
 import DemoQA.core.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -38,11 +39,17 @@ public class MainPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public MainPage() {
-    }
+//    public MainPage() {
+//
+//    }
 
+    /**
+     * Clicks on Element on card
+     * @author Irina Sh.
+     */
     public ElementsPage clickElementsCard() {
         elementsCard.click();
-        return new ElementsPage();
+//      click(By.elementsCard);
+        return new ElementsPage(driver);
     }
 }

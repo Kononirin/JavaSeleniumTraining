@@ -42,12 +42,12 @@ public class ElementsPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public ElementsPage() {
-
-    }
+//    public ElementsPage() {
+//
+//    }
 
     public TextBoxPage clickTextBoxButton() {
         textBoxButton.click();
-        return new TextBoxPage();
+        return new TextBoxPage(driver);
     }
 }

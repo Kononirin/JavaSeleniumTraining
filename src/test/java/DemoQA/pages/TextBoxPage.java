@@ -1,6 +1,7 @@
 package DemoQA.pages;
 
 import DemoQA.core.BasePage;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -37,7 +38,7 @@ public class TextBoxPage extends BasePage {
     @FindBy(xpath = "//p[@id='permanentAddress']")
     public WebElement permanentAddressResult;
 
-    public TextBoxPage() {
+    public TextBoxPage(WebDriver driver) {
         PageFactory.initElements(this.driver, this);
     }
 
