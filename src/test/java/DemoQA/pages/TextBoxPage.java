@@ -9,34 +9,34 @@ import org.openqa.selenium.support.PageFactory;
 public class TextBoxPage extends BasePage {
 
     @FindBy(id = "userName")
-    public WebElement userName;
+    private WebElement userName;
 
     @FindBy(id = "userEmail")
-    public WebElement userEmail;
+    private WebElement userEmail;
 
     @FindBy(id = "currentAddress")
-    public WebElement currentAddress;
+    private WebElement currentAddress;
 
     @FindBy(id = "permanentAddress")
-    public WebElement permanentAddress;
+    private WebElement permanentAddress;
 
     @FindBy(id = "submit")
-    public WebElement submitButton;
+    private WebElement submitButton;
 
     @FindBy(id = "output")
-    public WebElement resultContainer;
+    private WebElement resultContainer;
 
     @FindBy(id = "name")
-    public WebElement nameResult;
+    private WebElement nameResult;
 
     @FindBy(id = "email")
-    public WebElement emailResult;
+    private WebElement emailResult;
 
     @FindBy(xpath = "//p[@id='currentAddress']")
-    public WebElement currentAddressResult;
+    private WebElement currentAddressResult;
 
     @FindBy(xpath = "//p[@id='permanentAddress']")
-    public WebElement permanentAddressResult;
+    private WebElement permanentAddressResult;
 
     public TextBoxPage(WebDriver driver) {
         PageFactory.initElements(this.driver, this);
@@ -49,6 +49,22 @@ public class TextBoxPage extends BasePage {
         permanentAddress.sendKeys(permAddress);
         submitButton.click();
         return this;
+    }
+
+    public String nameResult() {
+        return nameResult.getText();
+    }
+
+    public String emailResult() {
+        return emailResult.getText();
+    }
+
+    public String currentAddressResult() {
+        return currentAddressResult.getText();
+    }
+
+    public String permanentAddressResult() {
+        return permanentAddressResult.getText();
     }
 
     public TextBoxPage fillUserName (String name){

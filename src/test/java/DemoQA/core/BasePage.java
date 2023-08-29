@@ -15,4 +15,8 @@ public class BasePage {
     protected void click(By locator) {
         driver.findElement(locator).click();
     }
+
+    public String getHeader(WebElement webElement) {
+        return webElement.getText();
+    }
 }

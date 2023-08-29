@@ -1,7 +1,6 @@
 package DemoQA.tests;
 
 import DemoQA.data.Person;
-import DemoQA.pages.ElementsPage;
 import DemoQA.pages.MainPage;
 import DemoQA.pages.TextBoxPage;
 import DemoQA.core.BaseTest;
@@ -10,20 +9,10 @@ import org.testng.annotations.Test;
 
 public class TextBoxTests extends BaseTest {
 
-//    MainPage mainPage;
-//    ElementsPage elementsPage;
-//    TextBoxPage textBoxPage;
     Person person = new Person();
 
     @Test
     public void testTextBox() {
-
-//        mainPage = new MainPage(driver);
-//        elementsPage = new ElementsPage(driver);
-//
-//        mainPage.elementsCard.click();
-//        elementsPage.textBoxButton.click();
-
         TextBoxPage textBoxPage = new MainPage(driver)
                         .clickElementsCard()
                         .clickTextBoxButton()
@@ -33,10 +22,10 @@ public class TextBoxTests extends BaseTest {
                                 person.CURRENT_ADDRESS,
                                 person.PERMANENT_ADDRESS);
 
-        Assert.assertEquals("Name:" + person.USER_NAME, textBoxPage.nameResult.getText());
-        Assert.assertEquals("Email:" + person.EMAIL, textBoxPage.emailResult.getText());
-        Assert.assertEquals("Current Address :" + person.CURRENT_ADDRESS, textBoxPage.currentAddressResult.getText());
-        Assert.assertEquals("Permananet Address :" + person.PERMANENT_ADDRESS, textBoxPage.permanentAddressResult.getText());
+        Assert.assertEquals(textBoxPage.nameResult(), "Name:" + person.USER_NAME);
+        Assert.assertEquals(textBoxPage.emailResult(), "Email:" + person.EMAIL);
+        Assert.assertEquals(textBoxPage.currentAddressResult(), "Current Address :" + person.CURRENT_ADDRESS);
+        Assert.assertEquals(textBoxPage.permanentAddressResult(), "Permananet Address :" + person.PERMANENT_ADDRESS);
     }
 
 

@@ -13,10 +13,10 @@ public class ElementsPageTests extends BaseTest {
     @Test
     public void testClickElementsCard() {
         mainPage = new MainPage(driver);
-//        elementsPage = new ElementsPage(driver);
+        elementsPage = new ElementsPage(driver);
 
-        mainPage.elementsCard.click();
+        mainPage.clickElementsCard();
 
-        Assert.assertEquals(elementsPage.headerElements.getText(), "Elements");
+        Assert.assertEquals(elementsPage.header(), "Elements ");
     }
 }

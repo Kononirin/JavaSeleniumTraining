@@ -9,45 +9,55 @@ import org.openqa.selenium.support.PageFactory;
 public class ElementsPage extends BasePage {
 
     @FindBy(className = "main-header")
-    public WebElement headerElements;
+    private WebElement headerElements;
 
-    @FindBy(xpath = "//span[text() = 'Text Box']")
-    public WebElement textBoxButton;
+    @FindBy(id = "item-0")
+    private WebElement textBoxButton;
 
-    @FindBy(xpath = "//span[text() = 'Check Box']")
-    public WebElement checkBoxButton;
+    @FindBy(id = "item-1")
+    private WebElement checkBoxButton;
 
-    @FindBy(xpath = "//span[text() = 'Radio Button']")
-    public WebElement radioButtonButton;
+    @FindBy(id = "item-2")
+    private WebElement radioButtonButton;
 
-    @FindBy(xpath = "//span[text() = 'Web Tables']")
-    public WebElement webTablesButton;
+    @FindBy(id = "item-3")
+    private WebElement webTablesButton;
 
-    @FindBy(xpath = "//span[text() = 'Buttons']")
-    public WebElement buttonsButton;
+    @FindBy(id = "item-4")
+    private WebElement buttonsButton;
 
-    @FindBy(xpath = "//span[text() = 'Links']")
-    public WebElement linksButton;
+    @FindBy(id = "item-5")
+    private WebElement linksButton;
 
-    @FindBy(xpath = "//span[text() = 'Broken Links - Images']")
-    public WebElement brokenLinksImgButton;
+    @FindBy(id = "item-6")
+    private WebElement brokenLinksImgButton;
 
-    @FindBy(xpath = "//span[text() = 'Upload and Download']")
-    public WebElement uploadAndDownloadButton;
+    @FindBy(id = "item-7")
+    private WebElement uploadAndDownloadButton;
 
-    @FindBy(xpath = "//span[text() = 'Dynamic Properties']")
-    public WebElement dynamicPropertiesButton;
+    @FindBy(id = "item-8")
+    private WebElement dynamicPropertiesButton;
 
     public ElementsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
-//    public ElementsPage() {
-//
-//    }
-
     public TextBoxPage clickTextBoxButton() {
         textBoxButton.click();
         return new TextBoxPage(driver);
+    }
+
+    public RadioButtonPage clickRadioButtonButton() {
+        radioButtonButton.click();
+        return new RadioButtonPage(driver);
+    }
+
+
+//    public String getHeader() {
+//        return headerElements.getText();
+//    }
+
+    public String header () {
+        return getHeader(headerElements);
     }
 }
