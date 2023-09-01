@@ -39,7 +39,7 @@ public class TextBoxPage extends BasePage {
     private WebElement permanentAddressResult;
 
     public TextBoxPage(WebDriver driver) {
-        PageFactory.initElements(this.driver, this);
+        PageFactory.initElements(driver, this);
     }
 
     public TextBoxPage fillFields(String name, String email, String curAddress, String permAddress) {

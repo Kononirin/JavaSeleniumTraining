@@ -52,6 +52,11 @@ public class ElementsPage extends BasePage {
         return new RadioButtonPage(driver);
     }
 
+    public ButtonsPage clickButtonsButton() {
+        buttonsButton.click();
+        return new ButtonsPage(driver);
+    }
+
 
 //    public String getHeader() {
 //        return headerElements.getText();
