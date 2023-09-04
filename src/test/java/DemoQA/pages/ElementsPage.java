@@ -57,6 +57,12 @@ public class ElementsPage extends BasePage {
         return new ButtonsPage(driver);
     }
 
+    public CheckBoxPage clickCheckBoxButton() {
+        checkBoxButton.click();
+
+        return new CheckBoxPage(driver);
+    }
+
 
 //    public String getHeader() {
 //        return headerElements.getText();

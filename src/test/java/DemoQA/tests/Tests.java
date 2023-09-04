@@ -101,7 +101,8 @@ public class Tests extends BaseTest {
         List<String> allCheckBoxes = Arrays.asList("home", "desktop", "notes", "commands", "documents", "workspace", "react", "angular", "veu",
                 "office", "public", "private", "classified", "general", "downloads", "wordFile", "excelFile");
 
-        List<WebElement> selectedCheckBoxes = driver.findElements(By.xpath("//span[@class='text-success']"));
+        List<WebElement> selectedCheckBoxes = driver.findElements(By.xpath(
+                "//span[@class='text-success']"));
 
         List<String> selectedCheckBoxesStrings = new ArrayList<>();
 
