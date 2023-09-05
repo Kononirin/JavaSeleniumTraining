@@ -21,8 +21,6 @@ public class BaseTest {
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
 
-        driver.manage().window().maximize();
-        driver.manage().window().setSize(new Dimension(1440, 900));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://demoqa.com/");
 
@@ -31,7 +29,6 @@ public class BaseTest {
 
     @AfterMethod
     public void afterMethod() {
-        driver.close();
         driver.quit();
     }
 }

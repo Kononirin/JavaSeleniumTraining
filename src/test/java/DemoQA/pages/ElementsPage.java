@@ -3,6 +3,7 @@ package DemoQA.pages;
 import DemoQA.core.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -61,6 +62,13 @@ public class ElementsPage extends BasePage {
         checkBoxButton.click();
 
         return new CheckBoxPage(driver);
+    }
+
+    public LinksPage clickLinksButton() {
+        //linksButton.click();
+        new Actions(driver).moveToElement(linksButton).click().perform();
+
+        return new LinksPage(driver);
     }
 
 

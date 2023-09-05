@@ -33,7 +33,4 @@ public class CheckBoxTests extends BaseTest {
 
         Assert.assertEquals(checkBoxPage.checkBoxHomeResult(), allCheckBoxes);
     }
-
-
-
 }

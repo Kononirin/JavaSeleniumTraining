@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 
 public class Tests extends BaseTest {
@@ -95,7 +96,8 @@ public class Tests extends BaseTest {
         driver.findElement(ELEMENTS).click();
         driver.findElement(By.id("item-1")).click();
 
-        WebElement checkBoxHome = driver.findElement(By.xpath("//span[@class='rct-checkbox']"));
+        WebElement checkBoxHome = driver.findElement(By
+                .xpath("//span[@class='rct-checkbox']"));
         checkBoxHome.click();
 
         List<String> allCheckBoxes = Arrays.asList("home", "desktop", "notes", "commands", "documents", "workspace", "react", "angular", "veu",
@@ -111,5 +113,36 @@ public class Tests extends BaseTest {
         }
 
         Assert.assertEquals(selectedCheckBoxesStrings, allCheckBoxes);
+    }
+
+    @Test
+    public void workWithWindows() {
+        driver.findElement(ELEMENTS).click();
+
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(0, 250)");
+
+        Actions actions = new Actions(driver);
+        WebElement linksButton1 = driver.findElement(By.id("item-5"));
+        actions.moveToElement(linksButton1).click().perform();
+
+        String originalWindow = driver.getWindowHandle();
+        //Set<String> existingWindows = driver.getWindowHandles();
+
+        WebElement linkHome1 = driver.findElement(By.id("simpleLink"));
+        linkHome1.click();
+
+        for (String newWindow : driver.getWindowHandles()) {
+            driver.switchTo().window(newWindow);
+        }
+
+//        WebElement headerDemoQA = driver.findElement(By.xpath("//header//a[@href='https://demoqa.com']"));
+//        Assert.assertEquals(headerDemoQA.getText(), "https://demoqa.com");
+
+        String titleDemoQA = driver.getTitle();
+        Assert.assertEquals(titleDemoQA, "DEMOQA");
+
+        driver.close();
+        driver.switchTo().window(originalWindow);
     }
 }
