@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ElementsPage extends BasePage {
 
     @FindBy(className = "main-header")
-    private WebElement headerElements;
+    private WebElement headerText;
 
     @FindBy(id = "item-0")
     private WebElement textBoxButton;
@@ -45,16 +45,19 @@ public class ElementsPage extends BasePage {
 
     public TextBoxPage clickTextBoxButton() {
         textBoxButton.click();
+
         return new TextBoxPage(driver);
     }
 
     public RadioButtonPage clickRadioButtonButton() {
         radioButtonButton.click();
+
         return new RadioButtonPage(driver);
     }
 
     public ButtonsPage clickButtonsButton() {
         buttonsButton.click();
+
         return new ButtonsPage(driver);
     }
 
@@ -65,18 +68,13 @@ public class ElementsPage extends BasePage {
     }
 
     public LinksPage clickLinksButton() {
-        //linksButton.click();
         new Actions(driver).moveToElement(linksButton).click().perform();
 
         return new LinksPage(driver);
     }
 
+    public String getHeaderText() {
 
-//    public String getHeader() {
-//        return headerElements.getText();
-//    }
-
-    public String header () {
-        return getHeader(headerElements);
+        return headerText.getText();
     }
 }

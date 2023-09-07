@@ -17,6 +17,6 @@ public class ElementsPageTests extends BaseTest {
 
         mainPage.clickElementsCard();
 
-        Assert.assertEquals(elementsPage.header(), "Elements ");
+        Assert.assertEquals(elementsPage.getHeaderText(), "Elements");
     }
 }

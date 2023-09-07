@@ -15,9 +15,18 @@ public class RadioButtonPageTests extends BaseTest {
                 .clickRadioButtonButton()
                 .clickYesRadioButton();
 
-        Assert.assertEquals(radioButtonPage.getYesResult(), "Yes");
+        Assert.assertEquals(radioButtonPage.getTextResult(), "Yes");
     }
 
+    @Test
+    public void testRadioButtonImpressive() {
+        RadioButtonPage radioButtonPage = new MainPage(driver)
+                .clickElementsCard()
+                .clickRadioButtonButton()
+                .clickImpressiveRadioButton();
+
+        Assert.assertEquals(radioButtonPage.getTextResult(), "Impressive");
+    }
 
     @Test
     public void testRadioButtonNo() {

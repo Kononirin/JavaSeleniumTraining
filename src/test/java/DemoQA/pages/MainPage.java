@@ -38,18 +38,13 @@ public class MainPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public int countOfCards() {
+    public int countNumberOfCards() {
         return categoryCards.size();
     }
 
-    /**
-     * Clicks on Elements on card
-     * @author Irina Sh.
-     */
-
     public ElementsPage clickElementsCard() {
         elementsCard.click();
-//      click(By.elementsCard);
+
         return new ElementsPage(driver);
     }
 }

@@ -42,33 +42,39 @@ public class TextBoxPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public TextBoxPage fillFields(String name, String email, String curAddress, String permAddress) {
+    public TextBoxPage fillAllFields(String name, String email, String curAddress, String permAddress) {
         userName.sendKeys(name);
         userEmail.sendKeys(email);
         currentAddress.sendKeys(curAddress);
         permanentAddress.sendKeys(permAddress);
         submitButton.click();
+
         return this;
     }
 
-    public String nameResult() {
+    public String getNameResult() {
+
         return nameResult.getText();
     }
 
-    public String emailResult() {
+    public String getEmailResult() {
+
         return emailResult.getText();
     }
 
-    public String currentAddressResult() {
+    public String getCurrentAddressResult() {
+
         return currentAddressResult.getText();
     }
 
-    public String permanentAddressResult() {
+    public String getPermanentAddressResult() {
+
         return permanentAddressResult.getText();
     }
 
-    public TextBoxPage fillUserName (String name){
+    public TextBoxPage fillUserNameField (String name){
         userName.sendKeys(name);
+
         return this;
     }
 }

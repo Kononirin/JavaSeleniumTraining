@@ -18,11 +18,11 @@ public class CheckBoxTests extends BaseTest {
                 .clickCheckBoxButton()
                 .selectCheckBoxCommands();
 
-        Assert.assertEquals(checkBoxPage.checkBoxCommandsResult(), "commands");
+        Assert.assertEquals(checkBoxPage.getCheckBoxCommandsResult(), "commands");
     }
 
     @Test
-    public void testcheckBoxHome() {
+    public void testСheckBoxHome() {
         List<String> allCheckBoxes = Arrays.asList("home", "desktop", "notes", "commands", "documents", "workspace", "react", "angular", "veu",
                 "office", "public", "private", "classified", "general", "downloads", "wordFile", "excelFile");
 
@@ -31,6 +31,6 @@ public class CheckBoxTests extends BaseTest {
                 .clickCheckBoxButton()
                 .selectCheckBoxHome();
 
-        Assert.assertEquals(checkBoxPage.checkBoxHomeResult(), allCheckBoxes);
+        Assert.assertEquals(checkBoxPage.getCheckBoxHomeResult(), allCheckBoxes);
     }
 }

@@ -19,10 +19,7 @@ public class RadioButtonPage extends BasePage {
     private WebElement noRadioButton;
 
     @FindBy(xpath = "//span[@class='text-success']")
-    private WebElement textSuccessYes;
-
-    @FindBy(xpath = "//span[@class='text-success']")
-    private WebElement textSuccessImpressive;
+    private WebElement textSuccess;
 
     public RadioButtonPage (WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -30,19 +27,29 @@ public class RadioButtonPage extends BasePage {
 
     public RadioButtonPage clickYesRadioButton() {
         new Actions(driver).moveToElement(yesRadioButton).click().perform();
+
         return this;
     }
 
-    public String getYesResult() {
-        return textSuccessYes.getText();
+    public RadioButtonPage clickImpressiveRadioButton() {
+        new Actions(driver).moveToElement(impressiveRadioButton).click().perform();
+
+        return this;
+    }
+
+    public String getTextResult() {
+
+        return textSuccess.getText();
     }
 
     public RadioButtonPage clickNoRadioButton() {
         new Actions(driver).moveToElement(noRadioButton).click().perform();
+
         return this;
     }
 
     public boolean isElementEnable() {
+
         return noRadioButton.isEnabled();
     }
 }

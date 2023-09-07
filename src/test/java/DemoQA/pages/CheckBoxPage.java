@@ -48,12 +48,12 @@ public class CheckBoxPage extends BasePage {
         return this;
     }
 
-    public String checkBoxCommandsResult() {
+    public String getCheckBoxCommandsResult() {
 
         return textSuccessCommands.getText();
     }
 
-    public List <String> checkBoxHomeResult() {
+    public List <String> getCheckBoxHomeResult() {
 
         List<WebElement> selectedCheckBoxes = driver.findElements(By.xpath(
                 "//span[@class='text-success']"));

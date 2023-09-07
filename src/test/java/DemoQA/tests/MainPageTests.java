@@ -13,6 +13,6 @@ public class MainPageTests extends BaseTest {
     public void testCountOfCategoryCard(){
         mainPage = new MainPage(driver);
 
-        Assert.assertEquals(mainPage.countOfCards(), 6);
+        Assert.assertEquals(mainPage.countNumberOfCards(), 6);
     }
 }
