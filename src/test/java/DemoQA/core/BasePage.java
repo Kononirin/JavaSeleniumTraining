@@ -11,12 +11,4 @@ public class BasePage {
     public static void setDriver(WebDriver webDriver) {
         driver = webDriver;
     }
-
-    protected void click(By locator) {
-        driver.findElement(locator).click();
-    }
-
-    public String getHeader(WebElement webElement) {
-        return webElement.getText();
-    }
 }

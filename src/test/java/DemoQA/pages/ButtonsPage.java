@@ -32,30 +32,37 @@ public class ButtonsPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public ButtonsPage doubleClickOnButton() {
+    public ButtonsPage clickDoubleOnButton() {
         new Actions(driver).moveToElement(doubleClickMe).doubleClick().perform();
+
         return this;
     }
 
-    public String doubleClickResult() {
+    public String getDoubleClickResult() {
+
         return doubleClickMessage.getText();
     }
 
-    public ButtonsPage rightClickOnButton() {
+    public ButtonsPage clickRightOnButton() {
         new Actions(driver).moveToElement(rightClickMe).contextClick().perform();
+
         return this;
     }
 
-    public String rightClickResult() {
+    public String getRightClickResult() {
+
         return rightClickMessage.getText();
     }
 
     public ButtonsPage clickOnClickMeButton() {
         clickMe.click();
+
         return this;
     }
 
-    public String clickMeResult() {
+    public String getClickMeResult() {
+
+
         return dynamicClickMessage.getText();
     }
 }

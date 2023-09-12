@@ -127,7 +127,6 @@ public class Tests extends BaseTest {
         actions.moveToElement(linksButton1).click().perform();
 
         String originalWindow = driver.getWindowHandle();
-        //Set<String> existingWindows = driver.getWindowHandles();
 
         WebElement linkHome1 = driver.findElement(By.id("simpleLink"));
         linkHome1.click();
@@ -135,9 +134,6 @@ public class Tests extends BaseTest {
         for (String newWindow : driver.getWindowHandles()) {
             driver.switchTo().window(newWindow);
         }
-
-//        WebElement headerDemoQA = driver.findElement(By.xpath("//header//a[@href='https://demoqa.com']"));
-//        Assert.assertEquals(headerDemoQA.getText(), "https://demoqa.com");
 
         String titleDemoQA = driver.getTitle();
         Assert.assertEquals(titleDemoQA, "DEMOQA");

@@ -1,6 +1,7 @@
 package DemoQA.pages;
 
 import DemoQA.core.BasePage;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -68,6 +69,8 @@ public class ElementsPage extends BasePage {
     }
 
     public LinksPage clickLinksButton() {
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(0, 250)");
         new Actions(driver).moveToElement(linksButton).click().perform();
 
         return new LinksPage(driver);

@@ -13,9 +13,9 @@ public class ButtonsTests extends BaseTest {
         ButtonsPage buttonsPage = new MainPage(driver)
                 .clickElementsCard()
                 .clickButtonsButton()
-                .doubleClickOnButton();
+                .clickDoubleOnButton();
 
-        Assert.assertEquals(buttonsPage.doubleClickResult(), "You have done a double click");
+        Assert.assertEquals(buttonsPage.getDoubleClickResult(), "You have done a double click");
     }
 
     @Test
@@ -23,9 +23,9 @@ public class ButtonsTests extends BaseTest {
         ButtonsPage buttonsPage = new MainPage(driver)
                 .clickElementsCard()
                 .clickButtonsButton()
-                .rightClickOnButton();
+                .clickRightOnButton();
 
-        Assert.assertEquals(buttonsPage.rightClickResult(), "You have done a right click");
+        Assert.assertEquals(buttonsPage.getRightClickResult(), "You have done a right click");
     }
 
     @Test
@@ -35,6 +35,6 @@ public class ButtonsTests extends BaseTest {
                 .clickButtonsButton()
                 .clickOnClickMeButton();
 
-        Assert.assertEquals(buttonsPage.clickMeResult(), "You have done a dynamic click");
+        Assert.assertEquals(buttonsPage.getClickMeResult(), "You have done a dynamic click");
     }
 }
