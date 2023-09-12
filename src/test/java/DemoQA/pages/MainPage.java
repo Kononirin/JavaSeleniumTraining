@@ -1,6 +1,7 @@
 package DemoQA.pages;
 
 import DemoQA.core.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class MainPage extends BasePage {
+
+    @FindBy(xpath = "//img[@class='banner-image']")
+    private WebElement banner;
 
     @FindBy(linkText = "https://demoqa.com")
     private WebElement headerLink;
@@ -46,5 +50,10 @@ public class MainPage extends BasePage {
         elementsCard.click();
 
         return new ElementsPage(driver);
+    }
+
+    public Boolean isBannerPresent() {
+
+        return driver.findElements(By.xpath("//img[@class='banner-image']")).size() > 0;
     }
 }
