@@ -3,6 +3,7 @@ package DemoQA.tests;
 import DemoQA.core.BaseTest;
 import DemoQA.pages.LinksPage;
 import DemoQA.pages.MainPage;
+import io.restassured.RestAssured;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -57,6 +58,13 @@ public class LinksTests  extends BaseTest {
                 .clickLinkCreated();
 
         Assert.assertEquals(linksPage.getResponseCode(), "201");
+    }
+
+    @Test
+    public void testStatusCodeCreatedLink() {
+        int statusCode = RestAssured.get("https://demoqa.com/created").statusCode();
+
+        Assert.assertEquals(statusCode, 201);
 
     }
 }
