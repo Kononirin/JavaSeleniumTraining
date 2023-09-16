@@ -1,6 +1,7 @@
 package DemoQA.tests;
 
 import DemoQA.core.BaseTest;
+import DemoQA.pages.LinksPage;
 import DemoQA.pages.MainPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,7 +22,7 @@ public class LinksTests  extends BaseTest {
     }
 
     @Test
-    public void testclickDynamicLinkAndCheckBannerInNewWin() {
+    public void testClickDynamicLinkAndCheckBannerInNewWin() {
         Boolean isBannerExist = new MainPage(driver)
                 .clickElementsCard()
                 .clickLinksButton()
@@ -33,17 +34,29 @@ public class LinksTests  extends BaseTest {
         driver.close();
     }
 
-
-
+//    LinksPage linksPage = new LinksPage(driver);
+//
+//    @Test
 //    public void testIsBannerExist() {
 //        Boolean isBannerExist = new MainPage(driver)
 //                .clickElementsCard()
 //                .clickLinksButton()
-//                .clickAnyLinkAndOpenNewWindow(dynamicLink)
+//                .clickAnyLinkAndOpenNewWindow(linksPage.dynamicLink)
 //                .isBannerPresent();
 //
 //        Assert.assertTrue(isBannerExist);
 //
 //        driver.close();
 //    }
+
+    @Test
+    public void testClickCreatedLink() {
+        LinksPage linksPage = new MainPage(driver)
+                .clickElementsCard()
+                .clickLinksButton()
+                .clickLinkCreated();
+
+        Assert.assertEquals(linksPage.getResponseCode(), "201");
+
+    }
 }

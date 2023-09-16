@@ -1,6 +1,7 @@
 package DemoQA.tests;
 
 import DemoQA.core.BaseTest;
+import io.restassured.RestAssured;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -140,5 +141,23 @@ public class Tests extends BaseTest {
 
         driver.close();
         driver.switchTo().window(originalWindow);
+    }
+
+    String url = "https://demoqa.com/links";
+
+
+    public int httpResponseCodeViaGet(String url) {
+        return RestAssured.get(url).statusCode();
+    }
+
+    public int httpResponseCodeViaPost(String url) {
+        return RestAssured.post(url).statusCode();
+    }
+
+    @Test
+    public void firstTestApi() {
+        int statusCode = RestAssured.get(url).statusCode();
+
+        Assert.assertEquals(statusCode, 200);
     }
 }

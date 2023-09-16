@@ -14,6 +14,12 @@ public class LinksPage extends BasePage {
     @FindBy(id = "dynamicLink")
     public WebElement dynamicLink;
 
+    @FindBy(id = "created")
+    public WebElement createdLink;
+
+    @FindBy (xpath = "//p[@id='linkResponse']/b[1]")
+    public WebElement responseCode;
+
     public LinksPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
@@ -37,7 +43,7 @@ public class LinksPage extends BasePage {
 
         return new MainPage(driver);
     }
-
+//
 //    public MainPage clickAnyLinkAndOpenNewWindow(WebElement link) {
 //        link.click();
 //
@@ -47,4 +53,17 @@ public class LinksPage extends BasePage {
 //
 //        return new MainPage(driver);
 //    }
+
+    public LinksPage clickLinkCreated() {
+        createdLink.click();
+
+        return this;
+    }
+
+    public String getResponseCode() {
+
+        return responseCode.getText();
+    }
+
+
 }
