@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="TestSuite" time="2.56" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="TestSuite" time="45.776" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.1.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -29,7 +29,7 @@
     <property name="maven.ext.class.path" value="D:\Download\IntelliJ IDEA Community Edition 2022.1.1\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="classworlds.conf" value="D:\Download\IntelliJ IDEA Community Edition 2022.1.1\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.6_10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Amazon Corretto\jdk17.0.6_10\bin;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\mysql\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Amazon Corretto\jdk17.0.6_10\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;D:\Download\platform-tools_r33.0.2-windows\platform-tools;;D:\Download\Fiddler;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.6_10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Amazon Corretto\jdk17.0.6_10\bin;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\mysql\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Amazon Corretto\jdk17.0.6_10\bin;%M2_HOME%\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;D:\Download\platform-tools_r33.0.2-windows\platform-tools;;D:\Download\Fiddler;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Roaming\npm;."/>
     <property name="maven.conf" value="D:\Download\IntelliJ IDEA Community Edition 2022.1.1\plugins\maven\lib\maven3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="61.0"/>
@@ -61,10 +61,13 @@
     <property name="java.vendor.version" value="Corretto-17.0.6.10.1"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="DemoQA.tests.Tests" name="testCheckBoxCommands" time="0.44"/>
-  <testcase classname="DemoQA.tests.Tests" name="testCheckBoxHome" time="0.474"/>
-  <testcase classname="DemoQA.tests.Tests" name="testGetHeader" time="0.152"/>
-  <testcase classname="DemoQA.tests.Tests" name="testRadioButtonImpressive" time="0.398"/>
-  <testcase classname="DemoQA.tests.Tests" name="testRadioButtonYes" time="0.242"/>
-  <testcase classname="DemoQA.tests.Tests" name="testTextBox" time="0.854"/>
+  <testcase classname="DemoQA.tests.Tests" name="firstTestApi" time="3.175"/>
+  <testcase classname="DemoQA.tests.Tests" name="testCheckBoxCommands" time="0.72"/>
+  <testcase classname="DemoQA.tests.Tests" name="testCheckBoxHome" time="0.49"/>
+  <testcase classname="DemoQA.tests.Tests" name="testGetHeader" time="0.146"/>
+  <testcase classname="DemoQA.tests.Tests" name="testJavaFaker" time="0.206"/>
+  <testcase classname="DemoQA.tests.Tests" name="testRadioButtonImpressive" time="0.404"/>
+  <testcase classname="DemoQA.tests.Tests" name="testRadioButtonYes" time="0.315"/>
+  <testcase classname="DemoQA.tests.Tests" name="testTextBox" time="0.997"/>
+  <testcase classname="DemoQA.tests.Tests" name="workWithWindows" time="39.323"/>
 </testsuite>

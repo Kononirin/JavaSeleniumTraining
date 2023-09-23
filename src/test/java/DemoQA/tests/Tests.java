@@ -1,6 +1,7 @@
 package DemoQA.tests;
 
 import DemoQA.core.BaseTest;
+import DemoQA.data.PersonJavaFaker;
 import io.restassured.RestAssured;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -157,5 +158,13 @@ public class Tests extends BaseTest {
         int statusCode = RestAssured.get(url).statusCode();
 
         Assert.assertEquals(statusCode, 200);
+    }
+
+    @Test
+    public void testJavaFaker() {
+        PersonJavaFaker personJavaFaker = new PersonJavaFaker();
+        System.out.println("First Name is " + personJavaFaker.getFirstName());
+        System.out.println("Last name is " + personJavaFaker.getLastName());
+        System.out.println("Age is " + personJavaFaker.getAge());
     }
 }
