@@ -32,7 +32,7 @@ public class ButtonsPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public ButtonsPage clickDoubleOnButton() {
+    public ButtonsPage clickDoubleOnButtonDoubleClickMe() {
         new Actions(driver).moveToElement(doubleClickMe).doubleClick().perform();
 
         return this;
@@ -61,7 +61,6 @@ public class ButtonsPage extends BasePage {
     }
 
     public String getClickMeResult() {
-
 
         return dynamicClickMessage.getText();
     }

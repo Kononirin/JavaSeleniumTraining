@@ -14,7 +14,7 @@ public class BaseTest {
 
     @BeforeMethod
     protected void beforeMethod(){
-    ChromeOptions options = new ChromeOptions();
+        ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtension", false);
         //options.addArguments( "--headless", "--disable-gpu");
         options.addArguments("start-maximized");

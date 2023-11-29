@@ -13,7 +13,7 @@ public class ButtonsTests extends BaseTest {
         ButtonsPage buttonsPage = new MainPage(driver)
                 .clickElementsCard()
                 .clickButtonsButton()
-                .clickDoubleOnButton();
+                .clickDoubleOnButtonDoubleClickMe();
 
         Assert.assertEquals(buttonsPage.getDoubleClickResult(), "You have done a double click");
     }
