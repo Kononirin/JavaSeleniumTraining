@@ -64,6 +64,4 @@ public class LinksPage extends BasePage {
 
         return responseCode.getText();
     }
-
-
 }
