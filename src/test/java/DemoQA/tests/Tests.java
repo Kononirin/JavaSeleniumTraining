@@ -22,7 +22,7 @@ public class Tests extends BaseTest {
     public void testGetHeader() {
         driver.findElement(ELEMENTS).click();
 
-        WebElement mainHeader = driver.findElement(By.xpath("//div[@class='main-header']"));
+        WebElement mainHeader = driver.findElement(By.xpath("//div[@class='header-text']"));
 
         Assert.assertEquals(mainHeader.getText(), "Elements");
     }
