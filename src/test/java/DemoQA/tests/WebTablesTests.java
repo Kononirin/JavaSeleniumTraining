@@ -2,7 +2,6 @@ package DemoQA.tests;
 
 import DemoQA.core.BaseTest;
 import DemoQA.pages.MainPage;
-import DemoQA.pages.WebTablesPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

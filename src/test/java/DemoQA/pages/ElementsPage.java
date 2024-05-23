@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ElementsPage extends BasePage {
 
-    @FindBy(className = "main-header")
+    @FindBy(className = "header-text")
     private WebElement headerText;
 
     @FindBy(id = "item-0")

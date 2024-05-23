@@ -1,5 +1,6 @@
 package DemoQA.core;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,8 +18,11 @@ public class BaseTest {
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtension", false);
         //options.addArguments( "--headless", "--disable-gpu");
-        options.addArguments("start-maximized");
+        //options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
+
+        Dimension dimension = new Dimension(1600, 900);
+        driver.manage().window().setSize(dimension);
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://demoqa.com/");
