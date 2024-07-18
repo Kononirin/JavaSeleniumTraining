@@ -15,6 +15,11 @@ public class WebTablesPage {
     @FindBy(xpath = "//div[@class='rt-tr-group']")
     private List<WebElement> webTableRowContent;
 
+    @FindBy(xpath = "//div[@class='rt-resizable-header-content']")
+    private List<WebElement> listWebTableHeaders;
+
+    private WebElement[] arrayOfTableHeaders;
+
     public WebTablesPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
@@ -23,4 +28,30 @@ public class WebTablesPage {
 
         return webTableRowContent.size();
     }
+
+    public Integer getNumberOfTableHeaders() {
+
+        return listWebTableHeaders.size();
+    }
+
+    public String[] arrayOfTableHeaders() {
+
+//        String[] arrayOfTableHeaders = listWebTableHeaders
+//                .toArray(new String[listWebTableHeaders.size()]);
+//
+//        return arrayOfTableHeaders;
+
+
+//        String[] textArray = webTableRowContent.stream()
+//                .map(WebElement::getText)
+//                .toArray(String[]::new);
+
+        String[] arrayOfTableHeaders = listWebTableHeaders.stream()
+                .map(WebElement::getText)
+                .toArray(String[]::new);
+
+        return arrayOfTableHeaders;
+    }
+
+
 }

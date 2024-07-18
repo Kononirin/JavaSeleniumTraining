@@ -17,7 +17,7 @@ public class BaseTest {
     protected void beforeMethod(){
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtension", false);
-        options.addArguments( "--headless", "--disable-gpu");
+        //options.addArguments( "--headless", "--disable-gpu");
         //options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
 
