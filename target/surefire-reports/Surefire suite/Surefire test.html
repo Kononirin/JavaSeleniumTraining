@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Aug 11 19:59:27 MSK 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1262 seconds (1262133 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DemoQA.tests.CheckBoxTests.test—heckBoxHome()'><b>test—heckBoxHome</b><br>Test class: DemoQA.tests.CheckBoxTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.CheckBoxTests@27f981c6</td></tr>
+<tr>
+<td title='DemoQA.tests.Tests.testTextBox()'><b>testTextBox</b><br>Test class: DemoQA.tests.Tests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.Tests@a38c7fe</td></tr>
+<tr>
+<td title='DemoQA.tests.ButtonsTests.testDoubleClickMeButton()'><b>testDoubleClickMeButton</b><br>Test class: DemoQA.tests.ButtonsTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.ButtonsTests@4b8ee4de</td></tr>
+<tr>
+<td title='DemoQA.tests.ButtonsTests.testRightClickMeButton()'><b>testRightClickMeButton</b><br>Test class: DemoQA.tests.ButtonsTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.ButtonsTests@4b8ee4de</td></tr>
+<tr>
+<td title='DemoQA.tests.Tests.testRadioButtonImpressive()'><b>testRadioButtonImpressive</b><br>Test class: DemoQA.tests.Tests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.Tests@a38c7fe</td></tr>
+<tr>
+<td title='DemoQA.tests.ButtonsTests.testClickMeButton()'><b>testClickMeButton</b><br>Test class: DemoQA.tests.ButtonsTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.ButtonsTests@4b8ee4de</td></tr>
+<tr>
+<td title='DemoQA.tests.Tests.workWithWindows()'><b>workWithWindows</b><br>Test class: DemoQA.tests.Tests</td>
+<td></td>
+<td>39</td>
+<td>DemoQA.tests.Tests@a38c7fe</td></tr>
+<tr>
+<td title='DemoQA.tests.Tests.testJavaFaker()'><b>testJavaFaker</b><br>Test class: DemoQA.tests.Tests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.Tests@a38c7fe</td></tr>
+<tr>
+<td title='DemoQA.tests.LinksTests.testStatusCodeCreatedLink()'><b>testStatusCodeCreatedLink</b><br>Test class: DemoQA.tests.LinksTests</td>
+<td></td>
+<td>1</td>
+<td>DemoQA.tests.LinksTests@1151e434</td></tr>
+<tr>
+<td title='DemoQA.tests.TextBoxTests.testTextBox()'><b>testTextBox</b><br>Test class: DemoQA.tests.TextBoxTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.TextBoxTests@51c668e3</td></tr>
+<tr>
+<td title='DemoQA.tests.ElementsPageTests.testClickElementsCard()'><b>testClickElementsCard</b><br>Test class: DemoQA.tests.ElementsPageTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.ElementsPageTests@1b11171f</td></tr>
+<tr>
+<td title='DemoQA.tests.LinksTests.testOpenNewWindowAndCheckBanner()'><b>testOpenNewWindowAndCheckBanner</b><br>Test class: DemoQA.tests.LinksTests</td>
+<td></td>
+<td>39</td>
+<td>DemoQA.tests.LinksTests@1151e434</td></tr>
+<tr>
+<td title='DemoQA.tests.Tests.firstTestApi()'><b>firstTestApi</b><br>Test class: DemoQA.tests.Tests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.Tests@a38c7fe</td></tr>
+<tr>
+<td title='DemoQA.tests.MainPageTests.testCountOfCategoryCard()'><b>testCountOfCategoryCard</b><br>Test class: DemoQA.tests.MainPageTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.MainPageTests@2dc54ad4</td></tr>
+<tr>
+<td title='DemoQA.tests.Tests.testGetHeader()'><b>testGetHeader</b><br>Test class: DemoQA.tests.Tests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.Tests@a38c7fe</td></tr>
+<tr>
+<td title='DemoQA.tests.Tests.testCheckBoxHome()'><b>testCheckBoxHome</b><br>Test class: DemoQA.tests.Tests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.Tests@a38c7fe</td></tr>
+<tr>
+<td title='DemoQA.tests.Tests.testRadioButtonYes()'><b>testRadioButtonYes</b><br>Test class: DemoQA.tests.Tests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.Tests@a38c7fe</td></tr>
+<tr>
+<td title='DemoQA.tests.WebTablesTests.testNumberOfTableRows()'><b>testNumberOfTableRows</b><br>Test class: DemoQA.tests.WebTablesTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.WebTablesTests@2e6a8155</td></tr>
+<tr>
+<td title='DemoQA.tests.RadioButtonPageTests.testRadioButtonNo()'><b>testRadioButtonNo</b><br>Test class: DemoQA.tests.RadioButtonPageTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.RadioButtonPageTests@4659191b</td></tr>
+<tr>
+<td title='DemoQA.tests.WebTablesTests.testNamesOfTableHeaders()'><b>testNamesOfTableHeaders</b><br>Test class: DemoQA.tests.WebTablesTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.WebTablesTests@2e6a8155</td></tr>
+<tr>
+<td title='DemoQA.tests.WebTablesTests.testNumberOfTableHeaders()'><b>testNumberOfTableHeaders</b><br>Test class: DemoQA.tests.WebTablesTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.WebTablesTests@2e6a8155</td></tr>
+<tr>
+<td title='DemoQA.tests.CheckBoxTests.testCheckBoxCommands()'><b>testCheckBoxCommands</b><br>Test class: DemoQA.tests.CheckBoxTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.CheckBoxTests@27f981c6</td></tr>
+<tr>
+<td title='DemoQA.tests.RadioButtonPageTests.testRadioButtonYes()'><b>testRadioButtonYes</b><br>Test class: DemoQA.tests.RadioButtonPageTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.RadioButtonPageTests@4659191b</td></tr>
+<tr>
+<td title='DemoQA.tests.Tests.testCheckBoxCommands()'><b>testCheckBoxCommands</b><br>Test class: DemoQA.tests.Tests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.Tests@a38c7fe</td></tr>
+<tr>
+<td title='DemoQA.tests.LinksTests.testClickCreatedLink()'><b>testClickCreatedLink</b><br>Test class: DemoQA.tests.LinksTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.LinksTests@1151e434</td></tr>
+<tr>
+<td title='DemoQA.tests.RadioButtonPageTests.testRadioButtonImpressive()'><b>testRadioButtonImpressive</b><br>Test class: DemoQA.tests.RadioButtonPageTests</td>
+<td></td>
+<td>0</td>
+<td>DemoQA.tests.RadioButtonPageTests@4659191b</td></tr>
+<tr>
+<td title='DemoQA.tests.LinksTests.testClickDynamicLinkAndCheckBannerInNewWin()'><b>testClickDynamicLinkAndCheckBannerInNewWin</b><br>Test class: DemoQA.tests.LinksTests</td>
+<td></td>
+<td>39</td>
+<td>DemoQA.tests.LinksTests@1151e434</td></tr>
+</table><p>
+</body>
+</html>

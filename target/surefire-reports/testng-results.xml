@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="27" passed="27" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-11T19:59:27 MSK" name="Surefire suite" finished-at="2024-08-11T20:20:29 MSK" duration-ms="1262133">
+    <groups>
+    </groups>
+    <test started-at="2024-08-11T19:59:27 MSK" name="Surefire test" finished-at="2024-08-11T20:20:29 MSK" duration-ms="1262133">
+      <class name="DemoQA.tests.TextBoxTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.TextBoxTests@51c668e3]" started-at="2024-08-11T20:17:40 MSK" name="beforeMethod" finished-at="2024-08-11T20:18:22 MSK" duration-ms="41657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testTextBox()[pri:0, instance:DemoQA.tests.TextBoxTests@51c668e3]" started-at="2024-08-11T20:18:22 MSK" name="testTextBox" finished-at="2024-08-11T20:18:23 MSK" duration-ms="795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTextBox -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.TextBoxTests@51c668e3]" started-at="2024-08-11T20:18:23 MSK" name="afterMethod" finished-at="2024-08-11T20:18:23 MSK" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- DemoQA.tests.TextBoxTests -->
+      <class name="DemoQA.tests.Tests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:10:36 MSK" name="beforeMethod" finished-at="2024-08-11T20:11:18 MSK" duration-ms="42430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="firstTestApi()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:11:18 MSK" name="firstTestApi" finished-at="2024-08-11T20:11:19 MSK" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTestApi -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:11:19 MSK" name="afterMethod" finished-at="2024-08-11T20:11:19 MSK" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:11:19 MSK" name="beforeMethod" finished-at="2024-08-11T20:12:01 MSK" duration-ms="41777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCheckBoxCommands()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:12:01 MSK" name="testCheckBoxCommands" finished-at="2024-08-11T20:12:01 MSK" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckBoxCommands -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:12:01 MSK" name="afterMethod" finished-at="2024-08-11T20:12:02 MSK" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:12:02 MSK" name="beforeMethod" finished-at="2024-08-11T20:12:44 MSK" duration-ms="42038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCheckBoxHome()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:12:44 MSK" name="testCheckBoxHome" finished-at="2024-08-11T20:12:44 MSK" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckBoxHome -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:12:44 MSK" name="afterMethod" finished-at="2024-08-11T20:12:45 MSK" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:12:45 MSK" name="beforeMethod" finished-at="2024-08-11T20:13:27 MSK" duration-ms="42009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testGetHeader()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:13:27 MSK" name="testGetHeader" finished-at="2024-08-11T20:13:27 MSK" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetHeader -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:13:27 MSK" name="afterMethod" finished-at="2024-08-11T20:13:27 MSK" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:13:27 MSK" name="beforeMethod" finished-at="2024-08-11T20:14:09 MSK" duration-ms="41366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testJavaFaker()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:14:09 MSK" name="testJavaFaker" finished-at="2024-08-11T20:14:09 MSK" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJavaFaker -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:14:09 MSK" name="afterMethod" finished-at="2024-08-11T20:14:09 MSK" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:14:09 MSK" name="beforeMethod" finished-at="2024-08-11T20:14:51 MSK" duration-ms="41517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRadioButtonImpressive()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:14:51 MSK" name="testRadioButtonImpressive" finished-at="2024-08-11T20:14:51 MSK" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadioButtonImpressive -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:14:51 MSK" name="afterMethod" finished-at="2024-08-11T20:14:52 MSK" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:14:52 MSK" name="beforeMethod" finished-at="2024-08-11T20:15:35 MSK" duration-ms="43597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRadioButtonYes()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:15:35 MSK" name="testRadioButtonYes" finished-at="2024-08-11T20:15:36 MSK" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadioButtonYes -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:15:36 MSK" name="afterMethod" finished-at="2024-08-11T20:15:36 MSK" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:15:36 MSK" name="beforeMethod" finished-at="2024-08-11T20:16:18 MSK" duration-ms="42161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testTextBox()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:16:18 MSK" name="testTextBox" finished-at="2024-08-11T20:16:19 MSK" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTextBox -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:16:19 MSK" name="afterMethod" finished-at="2024-08-11T20:16:19 MSK" duration-ms="578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:16:19 MSK" name="beforeMethod" finished-at="2024-08-11T20:17:01 MSK" duration-ms="41528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="workWithWindows()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:17:01 MSK" name="workWithWindows" finished-at="2024-08-11T20:17:40 MSK" duration-ms="39488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- workWithWindows -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.Tests@a38c7fe]" started-at="2024-08-11T20:17:40 MSK" name="afterMethod" finished-at="2024-08-11T20:17:40 MSK" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- DemoQA.tests.Tests -->
+      <class name="DemoQA.tests.ElementsPageTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.ElementsPageTests@1b11171f]" started-at="2024-08-11T20:03:00 MSK" name="beforeMethod" finished-at="2024-08-11T20:03:41 MSK" duration-ms="41285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testClickElementsCard()[pri:0, instance:DemoQA.tests.ElementsPageTests@1b11171f]" started-at="2024-08-11T20:03:41 MSK" name="testClickElementsCard" finished-at="2024-08-11T20:03:41 MSK" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickElementsCard -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.ElementsPageTests@1b11171f]" started-at="2024-08-11T20:03:41 MSK" name="afterMethod" finished-at="2024-08-11T20:03:41 MSK" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- DemoQA.tests.ElementsPageTests -->
+      <class name="DemoQA.tests.ButtonsTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.ButtonsTests@4b8ee4de]" started-at="2024-08-11T19:59:27 MSK" name="beforeMethod" finished-at="2024-08-11T20:00:11 MSK" duration-ms="44189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testClickMeButton()[pri:0, instance:DemoQA.tests.ButtonsTests@4b8ee4de]" started-at="2024-08-11T20:00:11 MSK" name="testClickMeButton" finished-at="2024-08-11T20:00:11 MSK" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickMeButton -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.ButtonsTests@4b8ee4de]" started-at="2024-08-11T20:00:11 MSK" name="afterMethod" finished-at="2024-08-11T20:00:12 MSK" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.ButtonsTests@4b8ee4de]" started-at="2024-08-11T20:00:12 MSK" name="beforeMethod" finished-at="2024-08-11T20:00:53 MSK" duration-ms="41274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testDoubleClickMeButton()[pri:0, instance:DemoQA.tests.ButtonsTests@4b8ee4de]" started-at="2024-08-11T20:00:53 MSK" name="testDoubleClickMeButton" finished-at="2024-08-11T20:00:53 MSK" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubleClickMeButton -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.ButtonsTests@4b8ee4de]" started-at="2024-08-11T20:00:53 MSK" name="afterMethod" finished-at="2024-08-11T20:00:54 MSK" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.ButtonsTests@4b8ee4de]" started-at="2024-08-11T20:00:54 MSK" name="beforeMethod" finished-at="2024-08-11T20:01:35 MSK" duration-ms="41566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRightClickMeButton()[pri:0, instance:DemoQA.tests.ButtonsTests@4b8ee4de]" started-at="2024-08-11T20:01:35 MSK" name="testRightClickMeButton" finished-at="2024-08-11T20:01:35 MSK" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRightClickMeButton -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.ButtonsTests@4b8ee4de]" started-at="2024-08-11T20:01:35 MSK" name="afterMethod" finished-at="2024-08-11T20:01:36 MSK" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- DemoQA.tests.ButtonsTests -->
+      <class name="DemoQA.tests.MainPageTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.MainPageTests@2dc54ad4]" started-at="2024-08-11T20:07:48 MSK" name="beforeMethod" finished-at="2024-08-11T20:08:29 MSK" duration-ms="41303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCountOfCategoryCard()[pri:0, instance:DemoQA.tests.MainPageTests@2dc54ad4]" started-at="2024-08-11T20:08:29 MSK" name="testCountOfCategoryCard" finished-at="2024-08-11T20:08:29 MSK" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountOfCategoryCard -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.MainPageTests@2dc54ad4]" started-at="2024-08-11T20:08:29 MSK" name="afterMethod" finished-at="2024-08-11T20:08:30 MSK" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- DemoQA.tests.MainPageTests -->
+      <class name="DemoQA.tests.WebTablesTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.WebTablesTests@2e6a8155]" started-at="2024-08-11T20:18:23 MSK" name="beforeMethod" finished-at="2024-08-11T20:19:04 MSK" duration-ms="41259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testNamesOfTableHeaders()[pri:0, instance:DemoQA.tests.WebTablesTests@2e6a8155]" started-at="2024-08-11T20:19:04 MSK" name="testNamesOfTableHeaders" finished-at="2024-08-11T20:19:05 MSK" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNamesOfTableHeaders -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.WebTablesTests@2e6a8155]" started-at="2024-08-11T20:19:05 MSK" name="afterMethod" finished-at="2024-08-11T20:19:05 MSK" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.WebTablesTests@2e6a8155]" started-at="2024-08-11T20:19:05 MSK" name="beforeMethod" finished-at="2024-08-11T20:19:46 MSK" duration-ms="41368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testNumberOfTableHeaders()[pri:0, instance:DemoQA.tests.WebTablesTests@2e6a8155]" started-at="2024-08-11T20:19:46 MSK" name="testNumberOfTableHeaders" finished-at="2024-08-11T20:19:47 MSK" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNumberOfTableHeaders -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.WebTablesTests@2e6a8155]" started-at="2024-08-11T20:19:47 MSK" name="afterMethod" finished-at="2024-08-11T20:19:47 MSK" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.WebTablesTests@2e6a8155]" started-at="2024-08-11T20:19:47 MSK" name="beforeMethod" finished-at="2024-08-11T20:20:28 MSK" duration-ms="41445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testNumberOfTableRows()[pri:0, instance:DemoQA.tests.WebTablesTests@2e6a8155]" started-at="2024-08-11T20:20:28 MSK" name="testNumberOfTableRows" finished-at="2024-08-11T20:20:29 MSK" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNumberOfTableRows -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.WebTablesTests@2e6a8155]" started-at="2024-08-11T20:20:29 MSK" name="afterMethod" finished-at="2024-08-11T20:20:29 MSK" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- DemoQA.tests.WebTablesTests -->
+      <class name="DemoQA.tests.LinksTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:03:41 MSK" name="beforeMethod" finished-at="2024-08-11T20:04:23 MSK" duration-ms="41201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testClickCreatedLink()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:04:23 MSK" name="testClickCreatedLink" finished-at="2024-08-11T20:04:23 MSK" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickCreatedLink -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:04:23 MSK" name="afterMethod" finished-at="2024-08-11T20:04:23 MSK" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:04:23 MSK" name="beforeMethod" finished-at="2024-08-11T20:05:05 MSK" duration-ms="41406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testClickDynamicLinkAndCheckBannerInNewWin()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:05:05 MSK" name="testClickDynamicLinkAndCheckBannerInNewWin" finished-at="2024-08-11T20:05:44 MSK" duration-ms="39286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickDynamicLinkAndCheckBannerInNewWin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:05:44 MSK" name="afterMethod" finished-at="2024-08-11T20:05:44 MSK" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:05:44 MSK" name="beforeMethod" finished-at="2024-08-11T20:06:26 MSK" duration-ms="41249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testOpenNewWindowAndCheckBanner()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:06:26 MSK" name="testOpenNewWindowAndCheckBanner" finished-at="2024-08-11T20:07:05 MSK" duration-ms="39294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenNewWindowAndCheckBanner -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:07:05 MSK" name="afterMethod" finished-at="2024-08-11T20:07:05 MSK" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:07:05 MSK" name="beforeMethod" finished-at="2024-08-11T20:07:46 MSK" duration-ms="41276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testStatusCodeCreatedLink()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:07:46 MSK" name="testStatusCodeCreatedLink" finished-at="2024-08-11T20:07:48 MSK" duration-ms="1404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusCodeCreatedLink -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.LinksTests@1151e434]" started-at="2024-08-11T20:07:48 MSK" name="afterMethod" finished-at="2024-08-11T20:07:48 MSK" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- DemoQA.tests.LinksTests -->
+      <class name="DemoQA.tests.CheckBoxTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.CheckBoxTests@27f981c6]" started-at="2024-08-11T20:01:36 MSK" name="beforeMethod" finished-at="2024-08-11T20:02:17 MSK" duration-ms="41367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCheckBoxCommands()[pri:0, instance:DemoQA.tests.CheckBoxTests@27f981c6]" started-at="2024-08-11T20:02:17 MSK" name="testCheckBoxCommands" finished-at="2024-08-11T20:02:18 MSK" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckBoxCommands -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.CheckBoxTests@27f981c6]" started-at="2024-08-11T20:02:18 MSK" name="afterMethod" finished-at="2024-08-11T20:02:18 MSK" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.CheckBoxTests@27f981c6]" started-at="2024-08-11T20:02:18 MSK" name="beforeMethod" finished-at="2024-08-11T20:02:59 MSK" duration-ms="41127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testСheckBoxHome()[pri:0, instance:DemoQA.tests.CheckBoxTests@27f981c6]" started-at="2024-08-11T20:02:59 MSK" name="testСheckBoxHome" finished-at="2024-08-11T20:02:59 MSK" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testСheckBoxHome -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.CheckBoxTests@27f981c6]" started-at="2024-08-11T20:02:59 MSK" name="afterMethod" finished-at="2024-08-11T20:03:00 MSK" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- DemoQA.tests.CheckBoxTests -->
+      <class name="DemoQA.tests.RadioButtonPageTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.RadioButtonPageTests@4659191b]" started-at="2024-08-11T20:08:30 MSK" name="beforeMethod" finished-at="2024-08-11T20:09:11 MSK" duration-ms="41305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRadioButtonImpressive()[pri:0, instance:DemoQA.tests.RadioButtonPageTests@4659191b]" started-at="2024-08-11T20:09:11 MSK" name="testRadioButtonImpressive" finished-at="2024-08-11T20:09:11 MSK" duration-ms="415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadioButtonImpressive -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.RadioButtonPageTests@4659191b]" started-at="2024-08-11T20:09:11 MSK" name="afterMethod" finished-at="2024-08-11T20:09:12 MSK" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.RadioButtonPageTests@4659191b]" started-at="2024-08-11T20:09:12 MSK" name="beforeMethod" finished-at="2024-08-11T20:09:53 MSK" duration-ms="41356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRadioButtonNo()[pri:0, instance:DemoQA.tests.RadioButtonPageTests@4659191b]" started-at="2024-08-11T20:09:53 MSK" name="testRadioButtonNo" finished-at="2024-08-11T20:09:53 MSK" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadioButtonNo -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.RadioButtonPageTests@4659191b]" started-at="2024-08-11T20:09:53 MSK" name="afterMethod" finished-at="2024-08-11T20:09:54 MSK" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DemoQA.tests.RadioButtonPageTests@4659191b]" started-at="2024-08-11T20:09:54 MSK" name="beforeMethod" finished-at="2024-08-11T20:10:35 MSK" duration-ms="41597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRadioButtonYes()[pri:0, instance:DemoQA.tests.RadioButtonPageTests@4659191b]" started-at="2024-08-11T20:10:35 MSK" name="testRadioButtonYes" finished-at="2024-08-11T20:10:36 MSK" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadioButtonYes -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoQA.tests.RadioButtonPageTests@4659191b]" started-at="2024-08-11T20:10:36 MSK" name="afterMethod" finished-at="2024-08-11T20:10:36 MSK" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- DemoQA.tests.RadioButtonPageTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
