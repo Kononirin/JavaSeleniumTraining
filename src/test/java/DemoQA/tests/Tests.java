@@ -24,7 +24,7 @@ public class Tests extends BaseTest {
 
         WebElement mainHeader = driver.findElement(By.xpath("//div[@class='header-text']"));
 
-        Assert.assertEquals(mainHeader.getText(), "Elements1");
+        Assert.assertEquals(mainHeader.getText(), "Elements");
     }
 
     @Test
